@@ -1,0 +1,1 @@
+UPDATE `uf` SET `sigla` = 'RR' WHERE `id` = 14
