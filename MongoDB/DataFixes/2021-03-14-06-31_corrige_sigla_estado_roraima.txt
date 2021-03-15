@@ -1,0 +1,31 @@
+// Observações: 
+// 1 - ibge é o nome da coleção criada
+// 2 - usar shell console ou alguma ferramenta correlativa para mudar para o dado correto
+
+db.ibge.updateMany(
+		{
+			_id: {
+				$in:['1400050',
+					'1400027',
+					'1400100',
+					'1400159',
+					'1400175',
+					'1400209',
+					'1400233',
+					'1400282',
+					'1400308',
+					'1400407',
+					'1400456',
+					'1400472',
+					'1400506',
+					'1400605',
+					'1400704'
+				]
+		}
+	},
+	{	
+		$set: { 
+			state: "RR"
+		}
+	}
+)
